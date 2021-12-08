@@ -11,7 +11,7 @@ A simple bot that monitors the price of user-defined items at online stores.
 
 ### Modifications
 
-- The `utils.py` file contains the actual price monitoring function - it is likely that the items you want to monitor are not the same HTML format of the items I built this to monitor. Therefore, you would have to monitor the function to isolate the item price and title to work for the specific items you want to monitor. 
+- The `utils.py` file contains the actual price monitoring function - it is likely that the items you want to monitor are not the same HTML format of the items I built this to monitor. Therefore, you would have to modify the scraper function to isolate the item price and title to work for the specific items you want to monitor. You will also have to create separate scraper functions in the `utils.py` file to monitor items on different websites as its unlikely that their webpage code is identical. Nevertheless, the main `slack_price_scraper.py` script can call multiple scraper functions.
 
 ### How to use
 
